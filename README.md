@@ -28,7 +28,7 @@ Testing the webserver
 
 ## PROGRAM:
 
-
+```
 from http.server import HTTPServer,BaseHTTPRequestHandler
 
 content =
@@ -49,7 +49,8 @@ class WebHandler(BaseHTTPRequestHandler):
 server_address=('',8000)
 httpd=HTTPServer(server_address,WebHandler)
 print("Web server running...")
-httpd.serve_forever()    
+httpd.serve_forever()   
+```
 ## OUTPUT:
 
 
